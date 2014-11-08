@@ -1,0 +1,31 @@
+%footer#footer
+  %nav#footernav
+    %ul
+      %li
+        %a{:href=>"/", :class=>"#{if @uri == '/' then "here" end}"}="Main"
+      %li
+        %a{:href=>"/services/", :class=>"#{if @uri.start_with?('/services/') then "here" end}"}="Services"
+      %li
+        %a{:href=>"/success/", :class=>"#{if @uri.start_with?('/success/') then "here" end}"}="Success"
+      %li{:class=>"last"}
+        %a{:href=>"/contact/", :class=>"#{if @uri.start_with?('/contact/') then "here" end}"}="Contact"
+  #contact-info
+    #electronic-contact-info
+      #phone
+        %a{:href=>"tel:+1-704-980-9715"}
+          ="+1 (704) 980-9715"
+      #email
+        %a{:href=>"mailto:info@eonmediagroup.com"}
+          ="info@eonmediagroup.com"
+    #address
+      1800 Camden Rd, Suite 107/123
+      %br
+      Charlotte, NC 28203
+  #privacy-terms-conditions
+    %ul
+      %li
+        %a{:href=>"/privacy"}= "Privacy Policy"
+      %li
+        %a{:href=>"/terms-conditions/"}= "Terms & Conditions"
+  #copyright
+    = "Copyright &copy;#{Time.new.year} EON Media Group. All rights reserved."

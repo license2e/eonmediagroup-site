@@ -1,0 +1,8 @@
+#global
+  %ul
+    %li
+      %a#nav-services{:href=>"/services/", :class=>"hide-text #{if @uri.start_with?('/services/') then "here" end}"}="Services"
+    %li
+      %a#nav-success{:href=>"/success/", :class=>"hide-text #{if @uri.start_with?('/success/') then "here" end}"}="Success"
+    %li{:class=>"last"}
+      %a#nav-contact{:href=>"/contact/", :class=>"hide-text #{if @uri.start_with?('/contact/') then "here" end}"}="Contact"

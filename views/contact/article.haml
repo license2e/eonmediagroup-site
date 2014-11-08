@@ -1,0 +1,38 @@
+%section#contact-content
+  %hr.spacer
+  #contact-content-container
+    %a#contact-phonenumber.action{:href=>"tel:+1-704-980-9715"}
+      .label
+        Our phone:
+      .val
+        +1 (704) 980-9715
+    %a#contact-emailaddress.action{:href => "mailto:info@eonmediagroup.com"}
+      .label
+        Our email:
+      .val
+        info@eonmediagroup.com
+    %br.clear
+  %h3
+    Requests, Comments, Feedback
+  %form#contact-form{:method=>"post", :action=>"/contact/"}
+    #contact-form-container
+      .contact-form-item.first
+        %label.input{:for => "contact-name"}
+          %input#contact-name.required.titled{:name=>"name", :placeholder=>"* Name...", :type=>"text", :value=>""}
+        %label.input{:for => "contact-email"}
+          %input#contact-email.required.titled{:name=>"email", :placeholder=>"* Email...", :type=>"text", :value=>""}
+        %label.input{:for => "contact-phone"}
+          %input#contact-phone.titled{:name=>"phone", :placeholder=>"   Phone...", :type=>"text", :value=>""}
+      .contact-form-item
+        %label.textarea{:for => "contact-message"}
+          %textarea#contact-message.titled{:name=>"message", :placeholder=>"   Leave a message..."}
+        %label.input#contact-marketing-label{:for => "contact-marketing"}
+          %input#contact-marketing{:name=>"marketing", :type=>"checkbox", :value=>"true"}
+          Do not use my info for marketing
+        %label#contact-submit-label.submit{:for => "contact-submit"}
+          #contact-form-loader
+          %input#contact-submit.hide-text{:name=>"submit", :type=>"submit", :value=>"Send your message"}
+          #contact-submit-success
+            Your message was sent
+          %br.clear
+      %br.clear

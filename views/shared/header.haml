@@ -1,0 +1,9 @@
+%header#header
+  %section#nav-container
+    - if @nav != nil then
+      %nav#nav
+        = haml @nav
+      / end #nav
+  %section.logo
+    %a#logo{:href=>"/", :class=>"hide-text"}
+      EON Media Group

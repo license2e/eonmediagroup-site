@@ -1,0 +1,21 @@
+%section#success-section
+  - if @case_studies != nil then
+    - total = @case_studies["Case Studies"].length
+    - @case_studies["Case Studies"].each_with_index do |client, i|
+      - nextIdx = (i+1)
+      - nextClientKey = ""
+      - if nextIdx < total then
+        - nextClient = @case_studies["Case Studies"][nextIdx]
+        - nextClientKey = nextClient["key"]
+      %a{:id=> "#{client["key"]}", :name => "#{client["key"]}"}
+      %h3.standout
+        Case Study for
+        .client
+          = "#{client["name"]}"
+      = haml :"case-studies/#{client["key"]}"
+      - if i < (total-1)
+        .success-nav-control
+          %a.hide-text.current{:href => "##{client["key"]}"} current case study
+          %a.hide-text.next{:href => "##{nextClientKey}"} next case study
+          .success-nav-control-sep
+      %hr.spacer

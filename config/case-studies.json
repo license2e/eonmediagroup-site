@@ -1,0 +1,16 @@
+{
+    "Case Studies": [
+        {
+            "key": "ridge-church", 
+            "name": "Ridge Church"
+        }, 
+        {
+            "key": "royal-class-auto", 
+            "name": "Royal Class Auto"
+        }, 
+        {
+            "key": "alternative-heating-air", 
+            "name": "Alternative Heating & Air"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+/* */
+@media only screen and (max-width:519px) {
+  html {
+    width: 320px !important;
+    height: 480px !important;
+    background-color: #222 !important;
+    overflow: hidden !important;
+    margin: auto !important;
+  }
+
+  body {
+    width: 320px !important;
+    height: 480px !important;
+    overflow: scroll !important;
+  }
+}
+
+@media only screen and (min-width:520px) and (max-width:759px) {
+  html {
+    width: 520px !important;
+    height: 700px !important;
+    background-color: #222 !important;
+    overflow: hidden !important;
+    margin: auto !important;
+  }
+
+  body {
+    width: 520px !important;
+    height: 700px !important;
+    overflow: scroll !important;
+  }
+}
+
+@media only screen and (min-width:760px) and (max-width:1003px) {
+  html {
+    width: 760px !important;
+    height: 800px !important;
+    background-color: #222 !important;
+    overflow: hidden !important;
+    margin: auto !important;
+  }
+
+  body {
+    width: 760px !important;
+    height: 800px !important;
+    overflow: scroll !important;
+  }
+}
+/* */

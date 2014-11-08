@@ -1,0 +1,15 @@
+%h3{:class=>"hide-text"}
+  Success
+.success-list
+  - if @case_studies != nil then
+    - total = @case_studies["Case Studies"].length
+    - @case_studies["Case Studies"].each_with_index do |client,i|
+      - rowClass = ""
+      - if i%2 == 0 && i == (total-1) then
+        - rowClass = "single"
+      .list-item{:class => "#{rowClass}"}
+        %a{:id=>"#{client["key"]}", :href=>"/success/##{client["key"]}"}
+          %img.h{:src=>"/case-studies/#{client["key"]}-success-h.png", :title=>"#{client["name"]}", :alt=>"#{client["name"]}"}
+          %img.n{:src=>"/case-studies/#{client["key"]}-success-n.png", :title=>"#{client["name"]}", :alt=>"#{client["name"]}"}
+  %br{:class => "clear"}
+= haml :"shared/aside"

@@ -1,0 +1,12 @@
+- if !params[:marketing].nil? then
+  NOTE: Do not use this info for marketing
+  %br
+= "Name: #{params[:name]}"
+%br
+= "Email: #{params[:email]}"
+%br
+= "Phone: #{params[:phone]}"
+%br
+Message:
+%br
+= "#{params[:message]}"

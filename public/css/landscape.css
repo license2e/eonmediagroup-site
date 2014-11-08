@@ -1,0 +1,155 @@
+h1 {
+  font-size: 110%;
+  line-height: 110%;
+}
+
+h2 {
+  font-size: 66%;
+}
+
+#header {
+  padding: 24px 24px 22px 24px;
+  height: 131px;
+}
+
+#header section.logo {
+  padding: 16px 0 0 0;
+  width: 100%;
+}
+
+#nav {
+  margin-top: -24px;
+  height: 177px;
+  width: 183px;
+}
+
+#global {
+  padding: 0 24px 22px 0;
+}
+
+#nav ul li {
+  margin: 5px 0 0 24px;
+}
+
+#article section {
+  padding: 0 24px;
+}
+
+#article section h3.standout {
+  font-size: 35px;
+}
+
+#article section h3.standout .client {
+  display: inline;
+}
+
+#article section blockquote small.author {
+  text-align: right;
+}
+
+#footer {
+  font-size: 25px;
+}
+
+#footer nav#footernav ul li,
+#footer nav#footernav ul li a {
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+#footer nav#footernav ul li a {
+  padding: 5px 10px;
+}
+
+#footer #contact-info #electronic-contact-info,
+#footer #contact-info #electronic-contact-info #phone,
+#footer #contact-info #electronic-contact-info #email {
+  width: 370px;
+}
+
+#home #article #home-content-container {
+  height: 132px;
+}
+
+#home #article #home-content {
+  max-width: 768px;
+  margin: auto;
+}
+
+#home #article #home-content-text {
+  margin: 30px 62px 26px 62px;
+}
+
+#home #aside {
+  padding: 80px 86px 0 86px;
+}
+
+#home #aside .success-list {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#home #aside .success-list .list-item {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 30px 7px 0 7px;
+}
+
+#home #aside .success-list .list-item.single {
+  clear: both;
+  float: none;
+}
+
+#services h2 {
+  font-size: 60px;
+  line-height: 55px;
+}
+
+#services h2 span.middle {
+  font-size: 38px;
+  line-height: 43px;
+}
+
+#services #article section h3 {
+  font-size: 35px;
+  line-height: 35px;
+}
+
+#services #article section#services-section h3 {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+#services #article section {
+  max-width: 645px;
+  margin: auto;
+  padding: 0 38px;
+}
+
+#services #article #approach-section .approach-section-item {
+  max-width: 645px;
+}
+
+#services #article #services-section .services-section-item {
+  width: 298px;
+  max-width: 298px;
+}
+
+#services #article #services-section .services-section-item h4 {
+  max-width: 283px;
+}
+
+#success #article section h4.bordered {
+  width: 382px;
+}
+
+#success #article section .results {
+  width: 100%;
+}
+
+#success #article section .results .result-item {
+  margin: auto;
+  clear: both;
+  float: none;
+}

@@ -1,0 +1,167 @@
+h1 {
+  font-size: 103%;
+  line-height: 98%;
+}
+
+h2 {
+  font-size: 62%;
+}
+
+#header {
+  padding: 0 0 10px 0;
+  height: 167px;
+}
+
+#header section.logo {
+  padding: 52px 0 0 0;
+  max-width: 970px;
+  margin: auto;
+}
+
+#header #nav-container {
+  max-width: 970px;
+  position: relative;
+}
+
+#nav {
+  margin-top: 22px;
+}
+
+#nav ul li {
+  margin: 10px 0 20px 24px;
+}
+
+#article section {
+  padding: 0 10px;
+}
+
+#footer {
+  font-size: 20px;
+}
+
+#footer #contact-info #electronic-contact-info {
+  width: 430px;
+  height: 60px;
+  clear: both;
+}
+
+#footer #contact-info #electronic-contact-info #phone,
+#footer #contact-info #electronic-contact-info #email {
+  width: auto;
+  float: left;
+}
+
+#footer #contact-info #electronic-contact-info #phone {
+  padding-right: 32px;
+}
+
+#footer #contact-info #electronic-contact-info #address {
+  clear: both;
+}
+
+#home #article #home-content-container {
+  height: 101px;
+}
+
+#home #article #home-content {
+  max-width: 970px;
+  margin: auto;
+}
+
+#home #article #home-content-text {
+  margin: 0 186px 26px 186px
+}
+
+#home #aside {
+  padding: 86px 0 0 0;
+  max-width: 970px;
+  margin: auto;
+}
+
+#home #aside .success-list {
+  margin-top: 50px;
+}
+
+#home #aside .success-list .list-item,
+#home #aside .success-list .list-item.single {
+  float: left;
+  width: 323px;
+  padding: 30px 0 0 0;
+  clear: none;
+}
+
+#services h1,
+#services h2,
+#services #article {
+  max-width: 970px;
+  margin: auto;
+}
+
+#services h2 span.top {
+  padding-right: 510px;
+}
+
+#services h2 span.bottom {
+  padding-left: 510px;
+}
+
+#services #article section {
+  max-width: 970px;
+  padding: 0 10px;
+}
+
+#services #article section h3 {
+  font-size: 22px;
+}
+
+#services #article #approach-section .approach-section-item {
+  width: 270px;
+  margin: 0 46px 0 0;
+  float: left;
+}
+
+#services #article #approach-section .approach-section-item h3,
+#services #article #approach-section .approach-section-item p {
+  margin: auto;
+  width: 270px;
+}
+
+#services #article #services-section .services-section-item {
+  float: left;
+  margin: 0 6px 0 0;
+  max-width: 310px;
+  width: 310px;
+}
+
+#success h1,
+#success h2,
+#success #article {
+  max-width: 970px;
+  margin: auto;
+}
+
+#success #article section .results .result-item,
+#success #article section .results .result-item.single {
+  width: 316px;
+  clear: none;
+  float: left;
+}
+
+#contact h2,
+#contact #article {
+  max-width: 970px;
+  padding: 0 10px;
+}
+
+#contact h2 span {
+  display: inline;
+}
+
+#contact #article #contact-content h3 {
+  margin: 60px 0 40px 0;
+}
+
+#contact #article #contact-content #contact-content-container {
+  max-width: 970px;
+  padding: 0 10px;
+}

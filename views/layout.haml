@@ -1,0 +1,42 @@
+!!!
+%html{:lang => "en", "xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-type"}/
+    = title_tag
+    = stylesheet_tags
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
+    %meta{:name => "apple-mobile-web-app-status-bar-style", :content => "black-translucent"}
+    %meta{:name => "google-site-verification", :content => "GxEFOd10lV1udJiwHU5PTdsKx6_cARk9c0MsdGgHYAI"}
+    %link{:rel => "shortcut icon", :href => "/favicon.ico" }
+    %link{:rel => "icon", :href => "/favicon.gif", :type => "image/gif" }
+    %link{:rel => "apple-touch-icon", :href => "/apple-touch-icon-iphone.png"}
+    %link{:rel => "apple-touch-icon", :sizes => "72x72", :href => "/apple-touch-icon-ipad.png"}
+    %link{:rel => "apple-touch-icon", :sizes => "114x114", :href => "/apple-touch-icon-iphone4.png"}
+    %link{:rel => "apple-touch-icon", :sizes => "144x144", :href => "/apple-touch-icon-retina.png"}
+  %body{:id=>"#{@body_id}"}
+    %a#top
+    #page
+      = haml :"shared/header"
+      #pusher
+        #content
+          %h1= @page_title
+          %h2= @page_subtitle
+          #limit
+            %article#article
+              = yield
+            / end #article
+            - if @aside != nil then
+              %aside#aside
+                = haml @aside
+              / end #aside
+          / end #limit
+        / end #content
+      / end #pusher
+      = haml :"shared/footer"
+    / end #page
+    = javascript_tags
+    = #haml :"shared/analytics"
+    = #haml :"shared/uservoice"
+    / #overlay
+    
+    
